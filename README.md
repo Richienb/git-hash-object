@@ -1,41 +1,30 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# git-hash-object [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/git-hash-object/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/git-hash-object)
 
-My awesome module.
+Compute an object ID as if from `git hash-object`.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/git-hash-object.png)](https://npmjs.com/package/git-hash-object)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install git-hash-object
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const gitHashObject = require("git-hash-object");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+gitHashObject("Hello World");
+//=> "5e1c309dae7f45e0f39b1bf3ac3cd9db12e7d689"
 ```
 
 ## API
 
-### theModule(input, options?)
+### gitHashObject(input)
 
 #### input
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The input to compute.

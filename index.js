@@ -1,9 +1,11 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
+const hasha = require("hasha")
+
+module.exports = input => {
 	if (typeof input !== "string") {
 		throw new TypeError(`Expected a string, got ${typeof input}`)
 	}
 
-	return `${input} & ${postfix}`
+	return hasha(`blob ${input.length}\0${input}`, { algorithm: "sha1" })
 }

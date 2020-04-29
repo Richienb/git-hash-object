@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "git-hash-object",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Compute an object ID as if from `git hash-object`.",
+	"repository": "https://github.com/Richienb/git-hash-object.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,8 +17,17 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"git",
+		"hash",
+		"object",
+		"string",
+		"blob",
+		"sha1"
+	],
+	"dependencies": {
+		"hasha": "^5.2.0"
+	},
 	"devDependencies": {
 		"ava": "^3.8.1",
 		"eslint-config-richienb": "^0.4.2",

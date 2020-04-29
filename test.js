@@ -1,13 +1,6 @@
 const test = require("ava")
-const theModule = require(".")
+const gitHashObject = require(".")
 
 test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(gitHashObject("Hello World"), "5e1c309dae7f45e0f39b1bf3ac3cd9db12e7d689")
 })
