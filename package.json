@@ -1,6 +1,6 @@
 {
 	"name": "git-hash-object",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Compute an object ID as if from `git hash-object`.",
 	"repository": "https://github.com/Richienb/git-hash-object.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
