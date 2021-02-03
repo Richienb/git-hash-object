@@ -6,5 +6,12 @@ module.exports = input => {
 		throw new TypeError(`Expected a string, got ${typeof input}`)
 	}
 
-	return hasha(`blob ${input.length}\0${input}`, { algorithm: "sha1" })
+	const stringToHash = [
+		"blob ",
+		Buffer.from(input).length,
+		"\0",
+		input
+	].join("")
+
+	return hasha(stringToHash, { algorithm: "sha1" })
 }
