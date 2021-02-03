@@ -25,6 +25,6 @@ gitHashObject("Hello World");
 
 #### input
 
-Type: `string`
+Type: `string | Buffer`
 
 The input to compute.
